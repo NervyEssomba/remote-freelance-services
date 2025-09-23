@@ -1,0 +1,62 @@
+/* ========== RESET & BASE ========== */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Inter, system-ui, Arial, sans-serif; color:#0b2a44; background:#f5f7fb; -webkit-font-smoothing: antialiased; line-height:1.5; }
+a { color:inherit; text-decoration:none; }
+.wrap { max-width:1100px; margin:0 auto; padding:20px; }
+
+/* ========== HEADER / NAV ========== */
+header.site-header { background: linear-gradient(180deg,#0b5cd6 0%, #0747a6 100%); color:#fff; padding:28px 0; position: sticky; top:0; z-index:999; }
+.site-top { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.brand { display:flex; gap:14px; align-items:center; }
+.brand img { width:84px; height:84px; border-radius:12px; object-fit:cover; border:3px solid rgba(255,255,255,0.12); transition: transform .3s; }
+.brand img:hover { transform: scale(1.05); }
+.brand h1 { margin:0; font-size:1.1rem; font-weight:700; }
+.brand p { margin:0; font-size:0.9rem; opacity:0.95; }
+.lang-switch { background:rgba(255,255,255,0.12); border:0; color:#fff; padding:8px 10px; border-radius:8px; cursor:pointer; transition: background .3s; }
+.lang-switch:hover { background: rgba(255,255,255,0.25); }
+
+nav.top-nav { margin-top:14px; display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+nav.top-nav a { color:rgba(255,255,255,0.95); padding:8px 12px; border-radius:8px; font-weight:600; transition: background .3s; }
+nav.top-nav a:hover { background:rgba(255,255,255,0.06); }
+
+/* ========== HERO ========== */
+.hero { display:grid; grid-template-columns:1fr 420px; gap:28px; align-items:center; padding:34px 0; }
+.hero h2 { font-size:1.6rem; margin-bottom:10px; color:#071b2b; }
+.hero p.lead { margin-bottom:16px; color:#334e68; }
+.cta-row { display:flex; gap:12px; flex-wrap:wrap; }
+.btn { display:inline-block; padding:10px 16px; border-radius:10px; background:#0b5cd6; color:#fff; font-weight:700; transition: transform .2s, box-shadow .2s; }
+.btn:hover { transform: translateY(-2px); box-shadow:0 4px 20px rgba(0,0,0,0.12); }
+.btn.alt { background:#fff; color:#0b2a44; border:1px solid #d6e0fb; }
+.pill-row { margin-top:16px; display:flex; gap:8px; flex-wrap:wrap; }
+.pill { display:inline-block; padding:6px 10px; border-radius:999px; background:#eef6ff; color:#06335b; font-weight:700; font-size:0.85rem; }
+
+.video-card { background:#fff; border-radius:12px; padding:8px; box-shadow:0 8px 30px rgba(15,30,60,0.08); }
+
+/* ========== SECTIONS ========== */
+section { padding:28px 0; }
+h3.section-title { margin-bottom:14px; font-size:1.2rem; color:#0b3a6f; text-align:center; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+.card { background:#fff; padding:16px; border-radius:10px; box-shadow:0 6px 22px rgba(11,26,50,0.05); transition: transform .18s, box-shadow .18s; }
+.card:hover { transform:translateY(-6px); box-shadow:0 12px 30px rgba(11,26,50,0.12); }
+.muted { color:#5b6b7f; font-size:0.95rem; }
+
+/* ========== PORTFOLIO ========== */
+.portfolio-project { margin-top:24px; }
+.gallery-slider { position:relative; overflow:hidden; display:flex; align-items:center; }
+.gallery-wrapper { display:flex; transition: transform .3s ease; }
+.gallery-wrapper img { width:300px; height:180px; object-fit:cover; border-radius:8px; margin-right:12px; }
+.gallery-slider button { position:absolute; top:50%; transform:translateY(-50%); background:rgba(11,26,50,0.5); color:#fff; border:none; padding:8px 12px; cursor:pointer; border-radius:6px; z-index:5; transition: background .3s; }
+.gallery-slider button:hover { background:rgba(11,26,50,0.8); }
+.gallery-slider .prev { left:0; }
+.gallery-slider .next { right:0; }
+
+/* ========== CONTACT ROW ========== */
+.contact-row { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:12px; }
+
+/* ========== FOOTER ========== */
+footer.site-footer { background:#021b3f; color:#d9eaff; padding:18px 0; text-align:center; border-top:1px solid rgba(255,255,255,0.03); }
+.footer-row { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width:980px) { .hero{grid-template-columns:1fr;} .gallery-wrapper img{width:48%;} .brand img{width:68px;height:68px;} }
+@media (max-width:560px) { .gallery-wrapper img{width:100%;} nav.top-nav{justify-content:center;} }
