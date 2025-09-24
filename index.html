@@ -1,11 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Nervy Essomba — Support Client & Virtual Assistant</title>
-<meta name="description" content="Nervy Essomba — Support client francophone, assistance virtuelle et e-commerce. Zendesk • HubSpot • WhatsApp" />
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ Titre SEO -->
+  <title>Nervy Essomba — Support Client & Virtual Assistant</title>
+
+  <!-- ✅ Description SEO (Google) -->
+  <meta name="description" content="Nervy Essomba — Support client francophone et anglophone, assistance virtuelle et e-commerce. Expert Zendesk, HubSpot et WhatsApp Business.">
+
+  <!-- ✅ Auteur -->
+  <meta name="author" content="Nervy Essomba">
+
+  <!-- ✅ Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:title" content="Nervy Essomba — Support Client & Virtual Assistant">
+  <meta property="og:description" content="Support client francophone et anglophone, assistance virtuelle et e-commerce. Réponse rapide et professionnelle.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tonsite.com"> <!-- 🔁 Mets l’URL de ton site -->
+  <meta property="og:image" content="https://tonsite.com/images/preview.jpg"> <!-- 🔁 Mets une image 1200x630px -->
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nervy Essomba — Support Client & Virtual Assistant">
+  <meta name="twitter:description" content="Support client francophone et anglophone, assistance virtuelle et e-commerce. Réponse rapide et professionnelle.">
+  <meta name="twitter:image" content="https://tonsite.com/images/preview.jpg"> <!-- 🔁 Mets la même image que OG -->
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- ✅ Feuille de style -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -31,6 +56,7 @@
       <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
       <a href="#video" data-i18n="nav_video">Vidéo</a>
       <a href="#cv" data-i18n="nav_cv">CV</a>
+      <a href="#testimonials" data-i18n="nav_testimonials">Témoignages</a>
       <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
   </div>
@@ -44,7 +70,7 @@
       <h2 data-i18n="hero_title_fr">Votre support client francophone professionnel — réactif et humain.</h2>
       <p class="lead" data-i18n="hero_sub_fr">Je gère vos tickets (email, WhatsApp, chat), vos commandes e-commerce et l'administration quotidienne — Zendesk, HubSpot maîtrisés.</p>
       <div class="cta-row">
-        <a class="btn" href="https://wa.me/237695083109?text=Bonjour%20Nervy%2C%20j%27ai%20une%20demande" target="_blank">Contactez-moi (WhatsApp)</a>
+        <a class="btn" href="https://wa.me/237695083109?text=Bonjour%20Nervy%2C%20j'ai%20une%20demande" target="_blank">Contactez-moi sur WhatsApp</a>
         <a class="btn alt" href="#services" data-i18n="cta_services">Voir mes services</a>
       </div>
       <div class="pill-row">
@@ -52,9 +78,9 @@
         <span class="pill" data-i18n="pill_bilingual">Anglais (fonctionnel)</span>
       </div>
     </div>
-    <aside class="video-card">
-      <iframe src="https://player.vimeo.com/video/1118763172" width="100%" height="250" frameborder="0" allowfullscreen></iframe>
-      <p class="center small muted" data-i18n="video_caption">Courte vidéo de présentation — 30–60s</p>
+    <aside class="video" style="width:100%">
+      <h2 data-i18n="video_title">Ma vidéo de présentation</h2>
+      <iframe src="https://player.vimeo.com/video/1118763172" width="100%" height="320" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </aside>
   </section>
 
@@ -62,7 +88,7 @@
   <section id="about">
     <h3 class="section-title" data-i18n="about_title">À propos</h3>
     <div class="card">
-      <p data-i18n="about_text">Bonjour et bienvenue à tous! je suis <strong>Nervy Essomba</strong>, spécialiste du support client et assistant virtuel. J'aide les boutiques e-commerce et les PME à améliorer l'expérience client, réduire les délais de réponse et fidéliser leurs acheteurs. Je travaille avec Zendesk, HubSpot et WhatsApp Business, et je fournis des rapports clairs pour suivre la performance.</p>
+      <p data-i18n="about_text">Bonjour et bienvenue ! Je suis <strong>Nervy Essomba</strong>, spécialiste du support client et assistant virtuel. J'aide les boutiques e-commerce et les PME à améliorer l'expérience client, réduire les délais de réponse et fidéliser leurs acheteurs. Je travaille avec Zendesk, HubSpot et WhatsApp Business, et je fournis des rapports clairs pour suivre la performance.</p>
       <p class="muted" data-i18n="about_note">Disponible immédiatement. Tarif et offres adaptables selon volume.</p>
     </div>
   </section>
@@ -99,20 +125,20 @@
     <h3 class="section-title" data-i18n="skills_title">Compétences clés</h3>
     <div class="grid">
       <div class="card">
-        <h4>Outils & Tech</h4>
-        <p class="muted">Zendesk, HubSpot, WhatsApp Business, Shopify, Google Sheets, Excel, MailerLite / Mailerist</p>
+        <h4 data-i18n="skills_tools">Outils & Tech</h4>
+        <p class="muted" data-i18n="skills_tools_text">Zendesk, HubSpot, WhatsApp Business, Shopify, Google Sheets, Excel, MailerLite / Mailerist</p>
       </div>
       <div class="card">
-        <h4>Langues & Communication</h4>
-        <p class="muted">Français (natif) — Anglais (fonctionnel)</p>
+        <h4 data-i18n="skills_languages">Langues & Communication</h4>
+        <p class="muted" data-i18n="skills_languages_text">Français (natif) — Anglais (fonctionnel)</p>
       </div>
       <div class="card">
-        <h4>Soft Skills</h4>
-        <p class="muted">Empathie client, patience, priorisation, résolution de problèmes, adaptabilité</p>
+        <h4 data-i18n="skills_soft">Soft Skills</h4>
+        <p class="muted" data-i18n="skills_soft_text">Empathie client, patience, priorisation, résolution de problèmes, adaptabilité</p>
       </div>
       <div class="card">
-        <h4>Performance</h4>
-        <p class="muted">KPI reporting, gestion SLA, optimisation du temps de réponse</p>
+        <h4 data-i18n="skills_perf">Performance</h4>
+        <p class="muted" data-i18n="skills_perf_text">KPI reporting, gestion SLA, optimisation du temps de réponse</p>
       </div>
     </div>
   </section>
@@ -121,37 +147,56 @@
   <section id="portfolio">
     <h3 class="section-title" data-i18n="portfolio_title">Portfolio — Exemples & captures</h3>
     <p class="center small muted" data-i18n="portfolio_note">Captures anonymisées de tickets, tableaux de bord et résolutions.</p>
+    
+    <!-- Exemple de projet avec Lightbox -->
     <div class="portfolio-project">
-      <h4>Suivi de Commande</h4>
-      <div class="gallery-slider">
-        <button class="prev">&lt;</button>
-        <div class="gallery-wrapper">
-          <img src="Ticket client Retard de livraison.jpeg" alt="Suivi 1">
-          <img src="Réponse Initial Retard de livraison.jpeg" alt="Suivi 2">
-          <img src="Mise à jour client Nouvelle date de livraison.jpeg" alt="Suivi 3">
-        </div>
-        <button class="next">&gt;</button>
+      <h4>Tableau de bord Zendesk</h4>
+      <div class="portfolio-images">
+        <a href="tableau-de-bord.jpeg" class="portfolio-lightbox"><img src="tableau-de-bord.jpeg" alt="Tableau de bord Index"></a>
       </div>
     </div>
+
     <div class="portfolio-project">
-      <h4>Tableaux de bord</h4>
-      <div class="gallery-slider">
-        <button class="prev">&lt;</button>
-        <div class="gallery-wrapper">
-          <img src="tableau de bord.jpeg" alt="Dashboard 1">
-          <img src="Note interne Demande de vérification logistique.jpeg" alt="Dashboard 2">
-        </div>
-        <button class="next">&gt;</button>
+      <h4>Produit endommagé</h4>
+      <div class="portfolio-images">
+        <a href="produit-endommagé1.jpeg" class="portfolio-lightbox"><img src="produit-endommagé1.jpeg" alt="Produit endommagé 1"></a>
+        <a href="produit-endommagé2.jpeg" class="portfolio-lightbox"><img src="produit-endommagé2.jpeg" alt="Produit endommagé 2"></a>
+        <a href="produit-endommagé3.jpeg" class="portfolio-lightbox"><img src="produit-endommagé3.jpeg" alt="Produit endommagé 3"></a>
+        <a href="produit-endommagé4.jpeg" class="portfolio-lightbox"><img src="produit-endommagé4.jpeg" alt="Produit endommagé 4"></a>
+        <a href="produit-endommagé5.jpeg" class="portfolio-lightbox"><img src="produit-endommagé5.jpeg" alt="Produit endommagé 5"></a>
+      </div>
+    </div>
+
+    <div class="portfolio-project">
+      <h4>Retard de livraison</h4>
+      <div class="portfolio-images">
+        <a href="retard-livraison1.jpeg" class="portfolio-lightbox"><img src="retard-livraison1.jpeg" alt="Retard de livraison 1"></a>
+        <a href="retard-livraison2.jpeg" class="portfolio-lightbox"><img src="retard-livraison2.jpeg" alt="Retard de livraison 2"></a>
+        <a href="retard-livraison3.jpeg" class="portfolio-lightbox"><img src="retard-livraison3.jpeg" alt="Retard de livraison 3"></a>
+        <a href="retard-livraison4.jpeg" class="portfolio-lightbox"><img src="retard-livraison4.jpeg" alt="Retard de livraison 4"></a>
+        <a href="retard-livraison5.jpeg" class="portfolio-lightbox"><img src="retard-livraison5.jpeg" alt="Retard de livraison 5"></a>
+        <a href="retard-livraison6.jpeg" class="portfolio-lightbox"><img src="retard-livraison6.jpeg" alt="Retard de livraison 6"></a>
+        <a href="retard-livraison7.jpeg" class="portfolio-lightbox"><img src="retard-livraison7.jpeg" alt="Retard de livraison 7"></a>
+      </div>
+    </div>
+
+    <div class="portfolio-project">
+      <h4>Double facturation</h4>
+      <div class="portfolio-images">
+        <a href="double-facturation1.jpeg" class="portfolio-lightbox"><img src="double-facturation1.jpeg" alt="Double facturation 1"></a>
+        <a href="double-facturation2.jpeg" class="portfolio-lightbox"><img src="double-facturation2.jpeg" alt="Double facturation 2"></a>
+        <a href="double-facturation3.jpeg" class="portfolio-lightbox"><img src="double-facturation3.jpeg" alt="Double facturation 3"></a>
+        <a href="double-facturation4.jpeg" class="portfolio-lightbox"><img src="double-facturation4.jpeg" alt="Double facturation 4"></a>
+        <a href="double-facturation5.jpeg" class="portfolio-lightbox"><img src="double-facturation5.jpeg" alt="Double facturation 5"></a>
       </div>
     </div>
   </section>
 
   <!-- VIDEO -->
   <section id="video">
-    <h3 class="section-title" data-i18n="video_title">Vidéo de présentation</h3>
+    <h3 class="section-title" data-i18n="video_title">Ma Vidéo de présentation</h3>
     <div class="card center">
-      <iframe src="https://player.vimeo.com/video/1118763172" width="100%" height="320" frameborder="0" allowfullscreen></iframe>
-      <p class="muted small" data-i18n="video_note">Visionnez ma présentation courte — 30–60 secondes.</p>
+      <iframe src="https://player.vimeo.com/video/1118763172" width="100%" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -169,8 +214,8 @@
   <section id="testimonials">
     <h3 class="section-title" data-i18n="test_title">Ce que disent mes clients</h3>
     <div class="grid">
-      <div class="card"><p class="muted">"Professionnel, réactif et centré sur la solution. Très bonne communication." — Client e-commerce</p></div>
-      <div class="card"><p class="muted">"A pris en charge toute la relation client avec rigueur et empathie." — Responsable boutique</p></div>
+      <div class="card"><p class="muted" data-i18n="test1">"Professionnel, réactif et centré sur la solution. Très bonne communication." — Client e-commerce</p></div>
+      <div class="card"><p class="muted" data-i18n="test2">"A pris en charge toute la relation client avec rigueur et empathie." — Responsable boutique</p></div>
     </div>
   </section>
 
@@ -179,7 +224,7 @@
     <h3 class="section-title" data-i18n="contact_title">Contact & Réseaux</h3>
     <div class="contact-row">
       <a class="btn" href="https://wa.me/237695083109" target="_blank">WhatsApp</a>
-      <a class="btn" href="mailto:nervyessomba@proton.me">Email</a>
+      <a class="btn" href="mailto:nervyessomba@yahoo.com" data-i18n="contact_email">Email</a>
       <a class="btn" href="https://www.linkedin.com/in/nervy-essomba-751558208" target="_blank">LinkedIn</a>
       <a class="btn" href="https://fr.fiverr.com/sellers/nervy_essomba/edit" target="_blank">Fiverr</a>
       <a class="btn" href="https://www.upwork.com/nx/find-work/" target="_blank">Upwork</a>
